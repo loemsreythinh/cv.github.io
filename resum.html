@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal CV</title>
+    <link rel="stylesheet" href="resum.css">
+</head>
+<body >
+    <div class="side-bar">
+        <a href="inext.html">home</a>
+        <a href="resume/resum.html">information</a>
+        <a href="">experience</a>
+        <a href="">contact</a>
+    </div>
+    <div class="tabar">
+        <div class="tabar-1">
+            <img src="images/dog-program.jpg">
+            <h4 class="name">Sreythinh</h4>
+            <div class="position">
+                <span >Software Engineering</span>
+            </div>
+            <div class="information">
+                <span class="personal">personal information</span><br><br>
+                <span class="personal">birthday:</span> <strong>06 July 1111</strong><br><br>
+                <span class="personal">website: ...</span><br><br>
+                <span class="personal">phone: +855 123456789</span><br><br>
+                <span >mail: candyapply@gmail.com</span><br><br>
+                <span class="personal">pnhom penh,cambodia</span><br>
+            </div>
+            <div>
+                <input type="button" id="btn" value="Download" />
+            </div>
+            <div>
+                <h3>languages</h3>
+                <span>Khmer: good</span><br>
+                <span>English: good</span><br>
+                <span>Chines: Level 2</span>
+            </div>
+        </div>
+        <div class="tabar-2">
+            <div class="resume">
+                <div class="resume-1">
+                    <span style="text-transform: uppercase;">resume</span><br><br>
+                    <strong style="color: black; text-transform: uppercase;">education</strong>
+                    <ul>
+                        <li><span style="background-color: blue; width: 50px; height: 20px; border-radius: 3px; color:white; padding:5px">2023-2021</span> <br><br>
+                          National University Of Battambong
+                        </li><br>
+                        <li><span style="background-color: blue; width: 50px; height: 20px; border-radius: 3px; color:white; padding:5px">2021-2019</span> <br><br>
+                            Somlout High School 
+                        </li><br>
+                        <li><span style="background-color: blue; width: 50px; height: 20px; border-radius: 3px; color:white; padding:5px">2019-2017</span> <br><br>
+                            Samaki Secondary School
+                        </li><br>
+                    </ul>
+                </div>
+                <div class="resume-2">
+                    <span style="text-transform: uppercase;">resume</span><br><br>
+                    <strong style="color: black; text-transform: uppercase;">experience</strong>
+                    <div>
+                        <ul>
+                            <li><span style="background-color: blue; width: 50px; height: 20px; border-radius: 3px; color:white; padding:5px">2024-2023</span> <br><br>
+                              Web And App Developer 
+                            </li><br>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function download(file, text) {
+
+            //creating an invisible element
+
+            let element = document.createElement('a');
+            element.setAttribute('href',
+                'Loem sreythinh (CV).pdf;charset=utf-8, '
+                + encodeURIComponent(text));
+            element.setAttribute('download', file);
+            document.body.appendChild(element);
+            element.click();
+
+            document.body.removeChild(element);
+        }
+
+        // Start file download.
+
+        document.getElementById("btn")
+            .addEventListener("click", function () {
+                let text =
+                    document.getElementById("text").value;
+                let filename = "GFG.txt";
+
+                download(filename, text);
+            }, false);
+    </script>
+</body>
+</html>

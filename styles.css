@@ -1,0 +1,108 @@
+.side-bar {
+    height: 20%;
+    color: black;
+    padding: 2%;
+    text-align: right;
+}
+a {
+    text-decoration: none;
+    padding: 0.7%;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+body {
+    background-color: whitesmoke;
+}
+.tabar {
+    background-color: white;
+    display: flex;
+}
+
+.tabar-1 {
+    width: 20%;
+    height: 1000px;
+    background-color: whitesmoke;
+}
+
+.tabar-1, img {
+    width: 20%;
+    height: 1000px;
+    text-align: center;
+}
+
+img {
+    text-align: center;
+    border-radius: 50%;
+    width: 25%;
+    height: 6%;
+}
+
+.name {
+    padding: 0%;
+    margin: 0%;
+}
+
+.tabar-2{
+    width: 80%;
+    height: 1000px;
+    background-color: white;
+    margin-left: 6%;
+}
+
+.position {
+    width: 170px;
+    height: 26px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: white;
+    padding-top: 7px;
+    margin-top: 15px;
+}
+
+.position span {
+    text-align: center;
+}
+
+.information {
+    margin-top: 10px;
+}
+
+.personal {
+    text-transform: uppercase;
+    
+}
+
+.navbar h2 {
+    text-transform: uppercase;
+    
+}
+
+.resume {
+    width: 50%;
+    display: flex;
+}
+
+
+.resume-1, .resume-2 {
+    color: blue;
+}
+
+.resume-2 {
+    padding-left: 10%;
+}
+
+.resume-a {
+    margin-top: 20px;
+}
+
+ul {
+    padding-inline-start: 18px; 
+    color: black;
+}
+
+.list-syle-none {
+    list-style-type: none;
+    padding-inline-start: 1px;
+}
+
+
